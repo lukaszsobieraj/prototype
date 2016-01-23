@@ -6,7 +6,7 @@ Services are the major part of this bundle.
 
 Simple workflow of services could be include in one sentence :
 **Contoller calls a service which is based on the routing.**
-  1.  Service definition, path e.g.:PrototypeBundle\Resources\Config\services.yml:
+  1.  Service definition, location e.g.:PrototypeBundle\Resources\Config\services.yml:
 ```
   prototype.formtype:
         class: Core\PrototypeBundle\Form\FormType
@@ -17,7 +17,7 @@ Simple workflow of services could be include in one sentence :
 ```
 
 ``` prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service. 
-```class``` path t the service file
+```class``` path to the service file
 ```arguments:[]``` an array of service arguments, could be null, container ```[@service_container] ``` etc.
 ```tags:  ``` element of correct service identify, could be a few, e.g.:
 *    route - routing, only begining part is enough 
@@ -39,11 +39,17 @@ Parameters: --withFormTypes; --withConfigServices
 
 ##Twigs
 
-*Archtecture:
-
 There are two types of twigs:
 - element
 - container;
 
 **Element** - the content of page, the center part of it;
 **Container** - the kind of wrapper of the content, the frame part of page.
+
+
+
+##Configuration
+There are two types of configuration files:
+  1.
+Basic configuration location: PrototypeBundle\DependencyInjection\Configuration
+This is build on a tree structure with TreeBuilder object. Default file always appears after generate new bundle.  Includes information about basic elements of application, e.g. twigs. Could be overwritten by Controller(application), Service.

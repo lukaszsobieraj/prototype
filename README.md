@@ -18,9 +18,11 @@ Simple workflow of services could be include in one sentence :
 
 ``` prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service. 
 ```class``` path t the service file
-```arguments:[]``` it is an array of service arguments, could be null or container ```[@service_container] ```
+```arguments:[]``` an array of service arguments, could be null, container ```[@service_container] ``` etc.
 ```tags:  ``` element of correct service identify, could be a few, e.g.:
-*    gdfsd
-*    srsd
+*    route - routing, only begining part is enough 
+*    entity - full name of entity
+*    actionId - there are two kinds, for routings and objects
+*    *if name and route exist any other params are not neccesery
 
 

@@ -20,7 +20,7 @@ Simple workflow of services could be include in one sentence :
 ```class``` path t the service file
 ```arguments:[]``` it is an array of service arguments, could be null or container ```[@service_container] ```
 ```tags:  ``` element of correct service identify, could be a few, e.g.:
-*  gdfsd
-*  srsd
+*    gdfsd
+*    srsd
 
 

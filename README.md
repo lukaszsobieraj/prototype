@@ -16,4 +16,4 @@ Simple workflow of services could be include in one sentence :
 
 ```
 
-  First line: ``` prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service 
+  * First line: ``` prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service 

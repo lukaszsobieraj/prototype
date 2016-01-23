@@ -4,7 +4,7 @@
 
 Services are the major part of this bundle. 
 
-Simple workflow of services could be include in one sentence :
+Simple workflow of services could be included in one sentence :
 **Contoller calls a service which is based on the routing.**
   1.  Service definition, location e.g.:PrototypeBundle\Resources\Config\services.yml:
 ```

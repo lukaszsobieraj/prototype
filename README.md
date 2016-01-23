@@ -6,7 +6,7 @@ Services are the major part of this bundle.
 
 Simple workflow of services could be include in one sentence :
 **Contoller calls a service which is based on the routing.**
-* Service definition, path e.g.:PrototypeBundle\Resources\Config\services.yml:
+1. Service definition, path e.g.:PrototypeBundle\Resources\Config\services.yml:
 ```
   prototype.formtype:
         class: Core\PrototypeBundle\Form\FormType

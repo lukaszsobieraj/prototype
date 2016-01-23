@@ -23,6 +23,6 @@ Simple workflow of services could be include in one sentence :
 *    route - routing, only begining part is enough 
 *    entity - full name of entity
 *    actionId - there are two kinds, for routings and objects
-*   ** * **if name and route exist any other params are not neccesery
+*   *****if name and route exist any other params are not neccesery
 
 

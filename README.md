@@ -3,9 +3,10 @@
 ## Services
 
 Services are the major part of this bundle. 
-Workflow services :
+
+Simple workflow of services could be include in one sentence :
 **Contoller calls a service which is based on the routing.**
-Service definition looks like example below:
+*Service definition, path e.g.:PrototypeBundle\Resources\Config\services.yml:
 ```
   prototype.formtype:
         class: Core\PrototypeBundle\Form\FormType
@@ -15,3 +16,4 @@ Service definition looks like example below:
 
 ```
 
+First line: ``` prototype.formtype ``` it is a name of service. It will be using in other classes for recognize a correct service 

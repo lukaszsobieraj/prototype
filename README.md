@@ -98,3 +98,7 @@ actions:
           new:
                 route: '*new'
 ```
+
+First part of the structure includes name of controller action e.g. read, list, new etc.
+Templates are the main twigs with typical content influnce of view type, element or container. 
+Structure of routings has been built on the same structure as actions, with one additional route_params.

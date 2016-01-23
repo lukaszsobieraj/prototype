@@ -52,3 +52,49 @@ There are two types of twigs:
 There are two types of configuration files:
   1. Basic configuration location: PrototypeBundle\DependencyInjection\Configuration
 This is build on a tree structure with TreeBuilder object. Default file always appears after generate new bundle.  Includes information about basic elements of application, e.g. twigs. Could be overwritten by Controller(application), Service.
+
+
+  2. Services configuration location: PrototypeBundle\Services\Config.
+  Main pattern for create this kin of configuration looks like example below:
+
+```
+actions:
+    create:
+          templates:
+              container:'Default\Container\create.html.twig'
+              element:'Default\Element\create.html.twig'
+    read:
+          templates:
+              container:'Default\Container\read.html.twig'
+              element:'Default\Element\read.html.twig'
+    update:
+          templates:
+              container:'Default\Container\update.html.twig'
+              element:'Default\Element\update.html.twig'
+    view:
+          templates:
+              container:'Default\Container\view.html.twig'
+              element:'Default\Element\view.html.twig'
+    list:
+          templates:
+              container:'Default\Container\list.html.twig'
+              element:'Default\Element\list.html.twig'
+    grid:
+          templates:
+              container:'Default\Container\grid.html.twig'
+              element:'Default\Element\grid.html.twig'
+    error:
+          templates:
+              container:'Default\Container\error.html.twig'
+              element:'Default\Element\error.html.twig'
+              
+    routings:
+          read:
+                route: '*read'
+                route_params: 'null'
+          list:
+                route: '*list'
+                route_params: 'null'
+          new:
+                route: '*new'
+```

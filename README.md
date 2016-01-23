@@ -41,9 +41,9 @@ Parameters: --withFormTypes; --withConfigServices
 
 *Archtecture:
 
----------------------------------------------------------------
--                                                             -
--                                                             -                                                             -
--                                                             -                                                             -
--                                                             -                                                             -
--                                                             -                                                             -
+There are two types of twigs:
+- element
+- container;
+
+**Element** - the content of page, the center part of it;
+**Container** - the kind of wrapper of the content, the frame part of page.

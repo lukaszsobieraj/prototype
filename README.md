@@ -16,4 +16,11 @@ Simple workflow of services could be include in one sentence :
 
 ```
 
-  a.First line: ``` prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service 
+``` prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service. 
+```class``` path t the service file
+```arguments:[]``` it is an array of service arguments, could be null or container ```[@service_container] ```
+```tags:  ``` element of correct service identify, could be a few, e.g.:
+*  gdfsd
+*  srsd
+
+

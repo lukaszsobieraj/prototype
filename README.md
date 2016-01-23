@@ -50,6 +50,5 @@ There are two types of twigs:
 
 ##Configuration
 There are two types of configuration files:
-  1.
-Basic configuration location: PrototypeBundle\DependencyInjection\Configuration
+  1. Basic configuration location: PrototypeBundle\DependencyInjection\Configuration
 This is build on a tree structure with TreeBuilder object. Default file always appears after generate new bundle.  Includes information about basic elements of application, e.g. twigs. Could be overwritten by Controller(application), Service.

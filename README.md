@@ -2,7 +2,7 @@
 
 ## Services
 
-Services are the major part of this bundle. 
+PrototypeBundle was built on the microservice architecture pattern. 
 
 Simple workflow of services could be included in one sentence :
 **Contoller calls a service which is based on the routing.**
@@ -26,7 +26,7 @@ Simple workflow of services could be included in one sentence :
     *    actionId - there are two kinds, for routings and objects
     *   **Attention:** if name and route exist any other params are not neccesery
   2. Commands
-Prototype bundle were prepared with a  special commands for easiest work proccesss. The solution is based on a generators. The solution is  hide in authomatic. The specific commands allow to build almost every type of important file, e.g FormType etc. 
+Prototype bundle were prepared with a special commands for easiest work process. The solution is based on generators. The solution is hidden in automatically generate a new files. The specific commands allows to build almost every type of important file, e.g FormType etc.
 Command looks like below:
 ```
 prototype:generate 

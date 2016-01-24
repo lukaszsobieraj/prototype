@@ -56,7 +56,7 @@ This is build on a tree structure with TreeBuilder object. Default file always a
 
 
   2. Services configuration location: PrototypeBundle\Services\Config.
-  Main pattern for create this kin of configuration looks like example below:
+  Main pattern for create this kind of configuration looks like example below:
 
 ```
 actions:

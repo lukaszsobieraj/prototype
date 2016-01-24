@@ -6,7 +6,7 @@ Services are the major part of this bundle.
 
 Simple workflow of services could be included in one sentence :
 **Contoller calls a service which is based on the routing.**
-  1.  Service definition, location e.g.:PrototypeBundle\Resources\Config\services.yml:
+  1.  Service definition, location:PrototypeBundle\Resources\Config\services.yml:
 ```
   prototype.formtype:
         class: Core\PrototypeBundle\Form\FormType
@@ -16,7 +16,8 @@ Simple workflow of services could be included in one sentence :
 
 ```
 
-  a)  ```prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service. 
+
+  a)    ```prototype.formtype ``` it is a name of service. It will be using by other classes for recognize a correct service. 
   b)  ```class``` path to the service file
   c)  ```arguments:[]``` an array of service arguments, could be null, container ```[@service_container] ``` etc.
   d)  ```tags:  ``` element of correct service identify, could be a few, e.g.:

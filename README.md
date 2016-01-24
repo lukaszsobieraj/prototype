@@ -21,10 +21,10 @@ Simple workflow of services could be included in one sentence :
     b)    class path - full name of the service file
     c)    arguments:[] -  an array of service arguments, could be null, container ```[@service_container] ``` etc.
     d)    tags: - element of correct service identify, could be a few, e.g.:
-*    route - routing, only begining part is enough 
-*    entity - full name of entity
-*    actionId - there are two kinds, for routings and objects
-*   **Attention:** if name and route exist any other params are not neccesery
+    *    route - routing, only begining part is enough 
+    *    entity - full name of entity
+    *    actionId - there are two kinds, for routings and objects
+    *   **Attention:** if name and route exist any other params are not neccesery
   2. Commands
 Prototype bundle were prepared with a  special commands for easiest work proccesss. The solution is based on a generators. The solution is  hide in authomatic. The specific commands allow to build almost every type of important file, e.g FormType etc. 
 Command looks like below:

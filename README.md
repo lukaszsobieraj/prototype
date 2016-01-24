@@ -102,4 +102,7 @@ First part of the structure includes name of controller action e.g. read, list, 
 
 ##Controller
 
-Main controller of PrototypeBundle
+Main controller of PrototypeBundle is a DefaultController which is extended by FosRESTController. 
+FosRESTBundle gives ability to change transfer state.
+Default Controller allows to manipulate the view, form etc.   
+

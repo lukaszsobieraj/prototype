@@ -54,7 +54,7 @@ There are two types of configuration files:
   1. Basic configuration location: Prototype Bundle\Dependency Injection\Configuration This is build on a tree structure with TreeBuilder object. Default file always appears after generate new bundle. Includes information about basic elements of application, e.g. twigs. It could be overwritten by Controller(application), Service.
 
 
-  2. Services configuration location: Prototype Bundle\Services\Config. Main pattern for create this kind of configuration looks like example below:
+  2. Services configuration location: Prototype Bundle\Services\Config. The basis of this structure is merging of associative arrays process. Main pattern for create this kind of configuration looks like example below:
 
 ```
 actions:
@@ -100,9 +100,14 @@ actions:
 
 First part of the structure includes name of controller action e.g. read, list, new etc. Templates are the main twigs with typical content depends on view type, element or container. Structure of routings has been built on the same structure as actions, with one additional field: route_params - parameters of routing.
 
+
 ##Controller
 
 Main controller of PrototypeBundle is a DefaultController which is extended by FosRESTController. 
 FosRESTBundle gives ability to change transfer state.
 Default Controller allows to manipulate the view, form etc.   
+
+
+##Events
+ToDo
 

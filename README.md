@@ -109,5 +109,6 @@ Default Controller allows to manipulate the view, form etc.
 
 
 ##Events
-ToDo
+ToDo 
+explanation for event and dispatch process.
 

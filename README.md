@@ -108,7 +108,11 @@ FosRESTBundle gives ability to change transfer state.
 Default Controller allows to manipulate the view, form etc.   
 
 
-##Events
-ToDo 
-explanation for event and dispatch process.
+##EventDispatcher
+
+EventDispatcher component has been used in PrototypeBundle. Special service 'prototype.event', path: PrototypBundle/Event/Event is  responsible for this process. Workflow looks as below:
+listener->dispatcher->event
+
+DefaultController contains a dispatch() method. 
+ToDo
 

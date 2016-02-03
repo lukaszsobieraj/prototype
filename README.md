@@ -2,7 +2,7 @@
 
 ## Services
 
-PrototypeBundle was built on the microservice architecture pattern. 
+PrototypeBundle has been built on the microservice architecture pattern. 
 
 Simple workflow of services could be included in one sentence :
 **Contoller calls a service which is based on the routing.**
@@ -51,10 +51,10 @@ There are two types of twigs:
 
 ##Configuration
 There are two types of configuration files:
-  1. Basic configuration location: Prototype Bundle\Dependency Injection\Configuration This is build on a tree structure with TreeBuilder object. Default file always appears after generate new bundle. Includes information about basic elements of application, e.g. twigs. It could be overwritten by Controller(application), Service.
+  1. Basic configuration location: Prototype Bundle\DependencyInjection\Configuration. This is built on a tree structure with TreeBuilder object. Default file always appears after generated new bundle. Includes information about basic elements of application, e.g. twigs. It could be overwritten by Controller(application), Service.
 
 
-  2. Services configuration location: Prototype Bundle\Services\Config. The basis of this structure is merging of associative arrays process. Main pattern for create this kind of configuration looks like example below:
+  2. Services configuration location: PrototypeBundle\Services\Config. The basis of this structure is merging of associative arrays process. Main pattern for create this kind of configuration looks like example below:
 
 ```
 actions:

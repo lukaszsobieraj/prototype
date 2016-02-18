@@ -30,7 +30,7 @@ Simple workflow of services could be included in one sentence :
     *    actionId - there are two kinds, for routings and objects
     *   **Attention:** if name and route exist any other params are not neccesery
   2. Commands
-Prototype bundle were prepared with a special commands for easiest work process. The solution is based on generators. The solution is hidden in automatically generate a new files. The specific commands allows to build almost every type of important file, e.g FormType etc.
+Prototype bundle were prepared with a special commands for easiest work process. The solution is based on generators. The solution is hidden in automatically generated  files. The specific commands allows to build almost every type of important file, e.g FormType etc.
 Command looks like below:
 ```
 prototype:generate 
@@ -108,7 +108,7 @@ First part of the structure includes name of controller action e.g. read, list, 
 ##Controller
 
 Main controller of PrototypeBundle is a DefaultController which is extended by FosRESTController. 
-FosRESTBundle gives ability to change transfer state.
+FosRESTBundle gives ability to change a transfer state.
 Default Controller allows to manipulate the view, form etc.   
 
 
@@ -121,15 +121,16 @@ DefaultController contains a dispatch() method.
 ##Create a simple app in a few steps
 1. Define a major service file.
 Prepare a service file, e.g. superadmin.services.yml. It could be empty only with parameters and services titles.
+'CCO/CallCenterBundle/Resource/config/routing/superadmin.services.yml'
 Add entry to the file: Config/DependencyInjection/CCOCallCenterExtnesion.
 There are place for add a new entries, e.g.
 ```
 $loader->load('superadmin.services.yml');
 
 ```
-Where 'superadmin' is a name of application.
+where 'superadmin' is a name of application.
 
-2. Define a main prefix of application.
+2. Define a main prefix of application in the main routing file.
 #Resources/Config/routng.yml 
 In the main routing add lines as below:
 ```
@@ -171,29 +172,29 @@ superadmin_callcenter_list:
 ```
 
 On the top is a name of routing, `superadmin_callcenter_view`
-In the locales is a route which is  after main prefix in the browser, '{ en: "/callcenter-list", pl: "/callcenter-lista"}', e.g.
-'/superadmin/callcenter-list`
-In defauls are parameters for recognize a corret action '_controller: "prototype.grid_controller:listAction"', correct entity '"entityName": "callcenter"' and view '"containerName": "container"'
+In the locales is a route which is  after main prefix in the browser, '{ en: "/callcenter-list", pl: "/callcenter-lista"}',
+e.g. '/superadmin/callcenter-list`
+In 'defaults:' are parameters for recognize a corret action '_controller: "prototype.grid_controller:listAction"', correct entity '"entityName": "callcenter"' and view '"containerName": "container"'
 
 4. Use a prototype command.
 In this step prepare a needed files, e.g. listConfig, formType, twig files etc.
-For begin this proccess use a command like below:
+For begin this process use a command line below:
 'prototype:generate' 
-call this command example below:
+call this command as example below:
 ```
 CCOCallCenterBundle CCO\UserBundle\Entity\User Superadmin --withListConfig –-withListElementTwig
 
 ```
 Description of parameters:
 'CCOCallCenterBundle' - place where config is declared
-'CCO\UserBundle\Entity\User' - name of entity
+'CCO\UserBundle\Entity\User' - full name of entity
 `Superadmin` - name of app and folder where generated files are located
 '--withListConfig' - parameter if listConfig is needed
 `–-withListElementTwig` - parameter if list twig is needed
 Others parameters exist if  necessary.
 
-6. Built services and configuration.
-In the service file prepared befor, e.g. superadmin.services.yml add lines like below:
+6. Build services and configuration.
+In the service file which has been prepared before, e.g. superadmin.services.yml add lines like below:
 ```
 prameters:
  user.config.parameters:
@@ -231,16 +232,16 @@ services:
 In config service 'superadmin.user.dashboard.config' the second argument '%user.config.parameters%' is a name of parameters block.
 In tags block route param is a name of route defined in superadmin.yml file.
 
-Pamaters block and all structure is usefull when call in twig like below:
+Pamaters block and all structure is useful when call it  in twig like below:
 ```
 href={{ path(routeservice.getRouteName(config,'view'), buttonRouteParams)}}
 ```
-There are other second posibiltiy to define a correct route wihtout parameters block.
+There is other second possibility to define a correct route without parameters block.
 If calling in twig looks like below:
 ```
 href={{path(routePrefix~'_view',{"id":record.id, "containerName": "container", "actionId": "default",  "entityName": "callcenter"})}}
 ```
-prepare services like descirbed at point no.3.
+prepare services as description at point no.3.
 
 
 

@@ -194,7 +194,7 @@ Description of parameters:
 Others parameters exist if  necessary.
 
 6. Build services and configuration.
-In the service file which has been prepared before, e.g. superadmin.services.yml add lines like below:
+In the service file which was  prepared before, e.g. superadmin.services.yml add lines like below:
 ```
 prameters:
  user.config.parameters:
@@ -232,16 +232,11 @@ services:
 In config service 'superadmin.user.dashboard.config' the second argument '%user.config.parameters%' is a name of parameters block.
 In tags block route param is a name of route defined in superadmin.yml file.
 
-Pamaters block and all structure is useful when call it  in twig like below:
-```
-href={{ path(routeservice.getRouteName(config,'view'), buttonRouteParams)}}
-```
-There is other second possibility to define a correct route without parameters block.
-If calling in twig looks like below:
-```
-href={{path(routePrefix~'_view',{"id":record.id, "containerName": "container", "actionId": "default",  "entityName": "callcenter"})}}
-```
-prepare services as description at point no.3.
+
+
+There is another  possibility to define a correct route without parameters block.
+
+Prepare services as a description at point no.3.
 
 
 
